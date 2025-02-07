@@ -1,0 +1,41 @@
+@media (max-width: 1000px)
+{
+    footer
+    {
+        padding: 40px;
+    }
+    footer .content
+    {
+        flex-direction: column;
+    }
+    footer .content .sect 
+    {
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+    footer .content .aboutus 
+    {
+        width: 100%;
+    }
+    footer .content .quicklinks 
+    {
+        width: 100%;
+        padding: 0;
+    }
+    footer .content .contactus 
+    {
+        width: 100%;
+    }
+    .copyright
+    {
+        padding: 0;
+    }
+    .copyright p
+    {
+        font-size: 14px;
+    }
+    .copyright p a
+    {
+        font-size: 12px;
+    }
+}

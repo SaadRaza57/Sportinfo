@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="topBar">
+        <div class="socialIcons">
+            <img src="images/facebookLogo.png" alt="">
+            <img src="images/twitter.png" alt="">
+            <img src="images/instagram.png" alt="">
+            <img src="images/youtube.png" alt="">
+        </div>
+        <div class="searchBox">
+            <input type="text" placeholder="Search Sports">
+            <button>Search</button>
+        </div>
+    </div>
+    
+    <div class="banner">
+        <div class="logo">
+            <img src="images/sportslogo.png" alt="">
+        </div>
+        <header>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html" >About Us</a></li>
+                <li class="sportsMenu">
+                    <a href="">Sports</a>
+                    <ul class="sportsDropdown">
+                        <li><a href="football.html">Football</a></li>
+                        <li><a href="cricket.html">Cricket</a></li>
+                        <li><a href="basketball.html">Basketball</a></li>
+                        <li><a href="golf.html">Golf</a></li>
+                        <li><a href="tennis.html">Tennis</a></li>
+                        <li><a href="sportsperson.html">Sports Person</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#news">News</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </header>
+        <div class="bannerContent">
+            <h2>Age is no barrier. It’s a limitation you put on your mind.</h2>
+        </div>
+    </div>
+
+    <div class="contactSection">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d115816.40811639882!2d67.0210980010868!3d24.8890175562829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d24.9064552!2d67.034556!4m5!1s0x3eb339999415e0c3%3A0x36742eee0fd9c291!2saptech%20msg%20map!3m2!1d24.887273999999998!2d67.1518195!5e0!3m2!1sen!2s!4v1644921137370!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="form">
+            <h2>get in touch with us</h2>
+            <form>
+                <input type="text" required pattern="[A-Za-z]{3,32}" placeholder="Enter Your Name">
+                <input type="email" required placeholder="Enter Your Email" >
+                <textarea required></textarea>
+                <button>send</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="content">
+            <div class="sect aboutus">
+                <h2>About Us</h2>
+                <p>sportsinfo is a multi national company that builds informative sites. i.e. CellInfo.com site gives all the information about cell phones, LibertyElectronics.com gives information about various electronics products and so on.</p>
+                <ul>
+                    <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sect quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="">Sports</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="documents/guestbook.xlsx">Guest Book</a></li>
+                </ul>
+            </div>
+            <div class="sect contactus">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>786 Second Street<br>DHA Phase VIII,<br>Karachi</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <p><a href="">sports.info@gmail.cok</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <p><a href="">+92 30 12345665</a><br>
+                        <a href="">+92 30 12345665</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Copyright &copy; 2022 <a href="" target="blank">M.Saad Raza </a>All rights reserved</p>
+    </div>
+    <script>
+    function searchSports()
+    {
+        var search = document.getElementById("txtsearch");
+
+        if(search.value == "football" || search.value == "Football" || search.value == "FOOTBALL")
+        {
+            window.location.href = "football.html"
+        }
+        else if(search.value == "cricket" || search.value == "Cricket" || search.value == "CRICKET")
+        {
+            window.location.href = "cricket.html"
+        }
+        else if(search.value == "basketball" || search.value == "Basketball" || search.value == "BASKETBALL")
+        {
+            window.location.href = "basketball.html"
+        }
+        else if(search.value == "golf" || search.value == "Golf" || search.value == "GOLF")
+        {
+            window.location.href = "golf.html"
+        }
+        else if(search.value == "tennis" || search.value == "Tennis" || search.value == "TENNIS")
+        {
+            window.location.href = "tennis.html"
+        }
+        else
+        {
+            alert("No Record Found")
+        }
+    }
+</script>
+</body>
+</html>
